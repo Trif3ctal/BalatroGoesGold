@@ -18,7 +18,19 @@ return {
                 text = {
 
                 }
-            }
+            },
+            j_bgg_Worlds = {
+                name = {'Worlds', '{s:0.8,C:inactive}Porter Robinson'},
+                text = {
+
+                }
+            },
+            j_bgg_Cross = {
+                name = {'Cross', '{s:0.8,C:inactive}Justice'},
+                text = {
+
+                }
+            },
         }
     }
 }
