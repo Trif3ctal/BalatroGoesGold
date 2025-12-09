@@ -53,3 +53,12 @@ end
 local path = SMODS.current_mod.path
 load_files(path, true)
 --#endregion
+
+--#region Assets
+SMODS.Atlas { -- Main Jokers Atlas
+    key = 'Jokers',
+    path = 'musicjokerssheet.png',
+    px = 71,
+    py = 95
+}
+--#endregion
