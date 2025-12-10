@@ -14,3 +14,10 @@ BalatroGoesGold.calculate = function(self, context)
 end
 
 --#endregion
+
+--#region Album ObjectType
+SMODS.ObjectType {
+    key = 'Album',
+    default = 'j_bgg_RAM',
+}
+--#endregion

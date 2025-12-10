@@ -1,17 +1,20 @@
 SMODS.Joker {
-    key = 'Cross',
+    key = 'Worlds',
     atlas = 'Jokers',
     pos = {
-        x = 0,
-        y = 1
+        x = 1,
+        y = 0
     },
     rarity = 1,
     config = {
         extra = {
         }
     },
-    bgg_addsound = 'bgg_Cross',
+    bgg_addsound = 'bgg_Worlds',
     blueprint_compat = true,
+    pools = {
+        Album = true
+    },
     cost = 4,
     loc_vars = function(self, info_queue, card)
         local stg = card.ability.extra
@@ -25,6 +28,6 @@ SMODS.Joker {
 }
 
 SMODS.Sound {
-    key = 'Cross',
-    path = 'addsounds/Cross.ogg'
+    key = 'Worlds',
+    path = 'addsounds/Worlds.ogg'
 }

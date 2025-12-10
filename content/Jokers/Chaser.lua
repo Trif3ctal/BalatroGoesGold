@@ -1,8 +1,8 @@
 SMODS.Joker {
-    key = 'Worlds',
+    key = 'Chaser',
     atlas = 'Jokers',
     pos = {
-        x = 1,
+        x = 7,
         y = 0
     },
     rarity = 1,
@@ -10,8 +10,11 @@ SMODS.Joker {
         extra = {
         }
     },
-    bgg_addsound = 'bgg_Worlds',
+    bgg_addsound = 'bgg_Chaser',
     blueprint_compat = true,
+    pools = {
+        Album = true
+    },
     cost = 4,
     loc_vars = function(self, info_queue, card)
         local stg = card.ability.extra
@@ -25,6 +28,6 @@ SMODS.Joker {
 }
 
 SMODS.Sound {
-    key = 'Worlds',
-    path = 'addsounds/Worlds.ogg'
+    key = 'Chaser',
+    path = 'addsounds/Chaser.ogg'
 }

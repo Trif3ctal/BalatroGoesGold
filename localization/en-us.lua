@@ -31,6 +31,41 @@ return {
 
                 }
             },
+        },
+        Other = {
+            p_bgg_mashup_jumbo_1 = {
+                name = 'Jumbo Mashup Pack',
+                text = {
+                    "Choose {C:attention}#1#{} of up to",
+                    "{C:attention}#2#{C:orange} Album Joker{} cards",
+                },
+            },
+            p_bgg_mashup_mega_1 = {
+                name = 'Mega Mashup Pack',
+                text = {
+                    "Choose {C:attention}#1#{} of up to",
+                    "{C:attention}#2#{C:orange} Album Joker{} cards",
+                },
+            },
+            p_bgg_mashup_normal_1 = {
+                name = 'Mashup Pack',
+                text = {
+                    "Choose {C:attention}#1#{} of up to",
+                    "{C:attention}#2#{C:orange} Album Joker{} cards",
+                },
+            },
+            p_bgg_mashup_normal_2 = {
+                name = 'Mashup Pack',
+                text = {
+                    "Choose {C:attention}#1#{} of up to",
+                    "{C:attention}#2#{C:orange} Album Joker{} cards",
+                },
+            },
+        }
+    },
+    misc = {
+        dictionary = {
+            k_bgg_mashup_pack = "Mashup Pack"
         }
     }
 }
