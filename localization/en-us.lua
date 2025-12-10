@@ -136,7 +136,9 @@ return {
             j_bgg_Vanisher = {
                 name = {'Vanisher,', 'Horizon Scraper', '{s:0.8,C:inactive}Quadeca'},
                 text = {
-
+                    'Gains {X:mult,C:white}X#1#{} Mult when',
+                    '{C:attention}Ante{} increases',
+                    '{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)'
                 }
             },
             j_bgg_GlowPt2 = {
