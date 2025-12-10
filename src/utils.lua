@@ -34,7 +34,7 @@ BalatroGoesGold.play_album_sound = function(card, delay)
         end
         local og_volume = G.SETTINGS.SOUND.music_volume
         G.E_MANAGER:add_event(Event({
-            delay = delay or 0,
+            delay = delay,
             trigger = 'after',
             func = function()
                 G.SETTINGS.SOUND.music_volume = G.SETTINGS.SOUND.music_volume * 0.25
@@ -44,7 +44,7 @@ BalatroGoesGold.play_album_sound = function(card, delay)
             end
         }), "bgg_sounds")
         G.E_MANAGER:add_event(Event({
-            delay = 12,
+            delay = 3 * G.SPEEDFACTOR,
             trigger = 'after',
             func = function()
                 if G.SETTINGS.SOUND.music_volume >= og_volume then
