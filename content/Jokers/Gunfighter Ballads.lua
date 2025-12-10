@@ -1,9 +1,9 @@
 SMODS.Joker {
-    key = 'template',
+    key = 'GunfighterBallads',
     atlas = 'Jokers',
     pos = {
-        x = 0,
-        y = 0
+        x = 1,
+        y = 3
     },
     rarity = 1,
     config = {

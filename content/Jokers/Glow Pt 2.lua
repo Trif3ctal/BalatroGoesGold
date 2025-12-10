@@ -1,9 +1,9 @@
 SMODS.Joker {
-    key = 'template',
+    key = 'GlowPt2',
     atlas = 'Jokers',
     pos = {
-        x = 0,
-        y = 0
+        x = 5,
+        y = 2
     },
     rarity = 1,
     config = {

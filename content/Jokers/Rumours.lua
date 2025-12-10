@@ -1,8 +1,8 @@
 SMODS.Joker {
-    key = 'template',
+    key = 'Rumours',
     atlas = 'Jokers',
     pos = {
-        x = 0,
+        x = 6,
         y = 0
     },
     rarity = 1,

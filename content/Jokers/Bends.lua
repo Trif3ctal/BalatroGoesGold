@@ -1,9 +1,9 @@
 SMODS.Joker {
-    key = 'template',
+    key = 'Bends',
     atlas = 'Jokers',
     pos = {
-        x = 0,
-        y = 0
+        x = 6,
+        y = 1
     },
     rarity = 1,
     config = {

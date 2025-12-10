@@ -1,5 +1,5 @@
 SMODS.Joker {
-    key = 'template',
+    key = 'VelvetUnderground',
     atlas = 'Jokers',
     pos = {
         x = 0,

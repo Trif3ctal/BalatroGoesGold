@@ -1,9 +1,9 @@
 SMODS.Joker {
-    key = 'template',
+    key = 'Very1999Christmas',
     atlas = 'Jokers',
     pos = {
-        x = 0,
-        y = 0
+        x = 9,
+        y = 2
     },
     rarity = 1,
     config = {
