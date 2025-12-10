@@ -5,13 +5,29 @@ BalatroGoesGold.calculate = function(self, context)
         if type(sound) == 'table' then
             sound = pseudorandom_element(sound)
         end
+        local og_volume = G.SETTINGS.SOUND.music_volume
         G.E_MANAGER:add_event(Event({
             delay = 0.4,
             trigger = 'after',
             func = function()
+                G.SETTINGS.SOUND.music_volume = G.SETTINGS.SOUND.music_volume * 0.25
                 context.card:juice_up()
                 play_sound(sound)
                 return true;
+            end
+        }))
+        G.E_MANAGER:add_event(Event({
+            delay = 12,
+            trigger = 'after',
+            func = function()
+                if G.SETTINGS.SOUND.music_volume >= og_volume then
+                    G.SETTINGS.SOUND.music_volume = og_volume
+                    G:save_settings()
+                    return true
+                else
+                    G.SETTINGS.SOUND.music_volume = G.SETTINGS.SOUND.music_volume + 1
+                    return false
+                end
             end
         }))
     end
@@ -27,11 +43,27 @@ function Card:click()
         if type(sound) == 'table' then
             sound = pseudorandom_element(sound)
         end
+        local og_volume = G.SETTINGS.SOUND.music_volume
         G.E_MANAGER:add_event(Event({
             func = function()
+                G.SETTINGS.SOUND.music_volume = G.SETTINGS.SOUND.music_volume * 0.25
                 self:juice_up()
                 play_sound(sound)
                 return true;
+            end
+        }))
+        G.E_MANAGER:add_event(Event({
+            delay = 12,
+            trigger = 'after',
+            func = function()
+                if G.SETTINGS.SOUND.music_volume >= og_volume then
+                    G.SETTINGS.SOUND.music_volume = og_volume
+                    G:save_settings()
+                    return true
+                else
+                    G.SETTINGS.SOUND.music_volume = G.SETTINGS.SOUND.music_volume + 1
+                    return false
+                end
             end
         }))
     end
