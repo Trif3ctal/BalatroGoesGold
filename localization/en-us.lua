@@ -62,7 +62,7 @@ return {
                 }
             },
             j_bgg_MMFOOD = {
-                name = {'MM..FOOD', '{s:0.8,C:inactive}Weezer'},
+                name = {'MM..FOOD', '{s:0.8,C:inactive}MF DOOM'},
                 text = {
 
                 }
@@ -86,7 +86,7 @@ return {
                 }
             },
             j_bgg_SkinnyFists = {
-                name = {'Lift Your Skinny Fists', 'like Antennas to Heaven', '{s:0.8,C:inactive}Godspeed You! Black Emperor'},
+                name = {'Lift Your Skinny Fists', 'like Antennas to Heaven', '{s:0.8,C:inactive}Godspeed You Black Emperor!'},
                 text = {
 
                 }
@@ -212,19 +212,19 @@ return {
                 }
             },
             j_bgg_SashaFierce = {
-                name = {'I Am... Sasha Fierce', '{s:0.8,C:inactive}Beyonce'},
+                name = {'I Am... Sasha Fierce', '{s:0.8,C:inactive}Beyoncé'},
                 text = {
 
                 }
             },
             j_bgg_brat = {
-                name = {'brat', '{s:0.8,C:inactive}Charli xcx'},
+                name = {'brat', '{s:0.8,C:inactive}Charli XCX'},
                 text = {
 
                 }
             },
             j_bgg_444 = {
-                name = {'4:44', '{s:0.8,C:inactive}Jay Z'},
+                name = {'4:44', '{s:0.8,C:inactive}JAY-Z'},
                 text = {
 
                 }
