@@ -4,7 +4,12 @@ BalatroGoesGold.STATES = {
 }
 --#endregion
 
---#region Sound on add
+
+--#region Sound stuff
+--Sound event queue
+G.E_MANAGER.queues.bgg_sounds = {}
+
+-- Sound on add
 BalatroGoesGold.calculate = function(self, context)
     if context.card_added and context.card.config.center.bgg_addsound and BalatroGoesGold.config.add_sounds and not BalatroGoesGold.STATES.add_sound_playing then
         BalatroGoesGold.STATES.add_sound_playing = true
@@ -22,7 +27,7 @@ BalatroGoesGold.calculate = function(self, context)
                 play_sound(sound)
                 return true;
             end
-        }))
+        }), "bgg_sounds")
         G.E_MANAGER:add_event(Event({
             delay = 12,
             trigger = 'after',
@@ -37,10 +42,9 @@ BalatroGoesGold.calculate = function(self, context)
                     return false
                 end
             end
-        }))
+        }), "bgg_sounds")
     end
 end
---#endregion
 
 --#region Sound on collection click
 local cc = Card.click
@@ -60,7 +64,7 @@ function Card:click()
                 play_sound(sound)
                 return true;
             end
-        }))
+        }), "bgg_sounds")
         G.E_MANAGER:add_event(Event({
             delay = 12,
             trigger = 'after',
@@ -75,10 +79,9 @@ function Card:click()
                     return false
                 end
             end
-        }))
+        }), "bgg_sounds")
     end
 end
-
 --#endregion
 
 --#region Album ObjectType
