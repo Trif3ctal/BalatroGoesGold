@@ -20,7 +20,7 @@ end
 local cc = Card.click
 function Card:click()
     cc(self)
-    if self.area and self.area.config.collection and self.config.center.bgg_addsound then
+    if self.area and self.area.config.collection and self.config.center.bgg_addsound and self.config.center.unlocked and self.config.center.discovered then
         BalatroGoesGold.play_album_sound(self)
     end
 end
