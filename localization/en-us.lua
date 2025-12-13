@@ -188,7 +188,11 @@ return {
             j_bgg_GunfighterBallads = {
                 name = {'Gunfighter Ballads', 'and Trail Songs', '{s:0.8,C:inactive}Marty Robbins'},
                 text = {
-
+                    "During {C:attention}Boss{} Blinds,",
+                    "if first played hand's rank value",
+                    "is equal to exactly {C:attention}#1#{},",
+                    "this card {C:red}self-destructs{}",
+                    "and {C:green}defeats{} the blind"
                 }
             },
             j_bgg_TeenageDreams = {
