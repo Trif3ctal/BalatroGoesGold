@@ -234,6 +234,14 @@ return {
 
                 }
             },
+            j_bgg_TravellingWithoutMoving = {
+                name = {'Travelling Without Moving', '{s:0.8,C:inactive}Jamiroquai'},
+                text = {
+                    'After {C:money}purchasing{} a card',
+                    'from the shop, move all shop cards',
+                    'to the left and {C:attention}restock{} one shop card'
+                }
+            }
         },
         Other = {
             p_bgg_mashup_jumbo_1 = {
