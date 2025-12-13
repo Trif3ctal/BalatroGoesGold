@@ -26,18 +26,27 @@ function Card:click()
 end
 
 BalatroGoesGold.play_album_sound = function(card, delay)
-    if BalatroGoesGold.config.add_sounds and not BalatroGoesGold.STATES.add_sound_playing then
-        BalatroGoesGold.STATES.add_sound_playing = true
+    if BalatroGoesGold.config.add_sounds then
+        if not BalatroGoesGold.STATES.add_sound_playing then
+            BalatroGoesGold.STATES.add_sound_playing = true
+        else
+            G.E_MANAGER:clear_queue('bgg_sounds')
+        end
+
         local sound = card.config.center.bgg_addsound
         if type(sound) == 'table' then
             sound = pseudorandom_element(sound)
         end
-        local og_volume = G.SETTINGS.SOUND.music_volume
+
+        if not BalatroGoesGold.ORIGINAL_MUSIC_VOLUME then
+            BalatroGoesGold.ORIGINAL_MUSIC_VOLUME = G.SETTINGS.SOUND.music_volume
+        end
+
         G.E_MANAGER:add_event(Event({
             delay = delay,
             trigger = 'after',
             func = function()
-                G.SETTINGS.SOUND.music_volume = G.SETTINGS.SOUND.music_volume * 0.25
+                G.SETTINGS.SOUND.music_volume = BalatroGoesGold.ORIGINAL_MUSIC_VOLUME * 0.25
                 card:juice_up()
                 play_sound(sound)
                 return true;
@@ -47,9 +56,10 @@ BalatroGoesGold.play_album_sound = function(card, delay)
             delay = 3 * G.SPEEDFACTOR,
             trigger = 'after',
             func = function()
-                if G.SETTINGS.SOUND.music_volume >= og_volume then
+                if G.SETTINGS.SOUND.music_volume >= BalatroGoesGold.ORIGINAL_MUSIC_VOLUME then
                     BalatroGoesGold.STATES.add_sound_playing = false
-                    G.SETTINGS.SOUND.music_volume = og_volume
+                    G.SETTINGS.SOUND.music_volume = BalatroGoesGold.ORIGINAL_MUSIC_VOLUME
+                    BalatroGoesGold.ORIGINAL_MUSIC_VOLUME = nil
                     G:save_settings()
                     return true
                 else
