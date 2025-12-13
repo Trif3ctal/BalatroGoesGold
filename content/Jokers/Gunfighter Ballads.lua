@@ -12,7 +12,7 @@ SMODS.Joker {
     },
     rarity = 3,
     bgg_addsound = 'bgg_GunfighterBallads',
-    blueprint_compat = true,
+    blueprint_compat = false,
     pools = {
         Album = true
     },
@@ -32,7 +32,7 @@ SMODS.Joker {
             juice_card_until(card, eval, true)
         end
 
-        if context.before and G.GAME.current_round.hands_played == 0 and G.GAME.blind and ((not G.GAME.blind.disabled) and (G.GAME.blind:get_type() == 'Boss')) then
+        if context.before and not context.blueprint and G.GAME.current_round.hands_played == 0 and G.GAME.blind and ((not G.GAME.blind.disabled) and (G.GAME.blind:get_type() == 'Boss')) then
             local total = 0
             for k, v in pairs(context.scoring_hand) do
                 if not v.config.center.replace_base_card then
