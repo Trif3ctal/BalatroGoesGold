@@ -61,6 +61,7 @@ SMODS.Joker {
                         G.FUNCS.draw_from_play_to_discard()
                         G.STATE_COMPLETE = true
                         end_round()
+                        update_hand_text({delay = 0, immediate = true}, {mult = 0, chips = 0, chip_total = 0, level = '', handname = ''})
                         return true;
                     end
                 }))
