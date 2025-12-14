@@ -11,7 +11,7 @@ SMODS.Joker {
             mult = 12
         }
     },
-    -- bgg_addsound = 'bgg_templatestring',
+    bgg_addsound = 'bgg_Blackstar',
     blueprint_compat = true,
     pools = {
         Album = true
@@ -54,4 +54,9 @@ SMODS.Joker {
             end
         end
     end
+}
+
+SMODS.Sound {
+    key = 'Blackstar',
+    path = 'addsounds/Blackstar.ogg'
 }
