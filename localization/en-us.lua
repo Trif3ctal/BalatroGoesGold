@@ -38,7 +38,9 @@ return {
             j_bgg_RunTheJewels3 = {
                 name = { 'Run The Jewels 3', '{s:0.8,C:inactive}Run The Jewels' },
                 text = {
-
+                    'If played hand contains {C:attention}#1#',
+                    'or more {C:diamonds}Diamond{} cards,',
+                    '{C:attention}upgrade{} its level'
                 }
             },
             j_bgg_BitterTongues = {
@@ -86,7 +88,10 @@ return {
             j_bgg_DemonDays = {
                 name = { 'Demon Days', '{s:0.8,C:inactive}Gorillaz' },
                 text = {
-
+                    '{C:attention}Retrigger{} all played cards if',
+                    'played hand contains a {C:hearts}Heart{}',
+                    'card, {C:diamonds}Diamond{} card, {C:clubs}Club{} card,',
+                    'and {C:spades}Spade{} card'
                 }
             },
             j_bgg_SkinnyFists = {
