@@ -27,9 +27,13 @@ return {
             },
             j_bgg_Cross = {
                 name = {'{f:bgg_emoji}†', '{s:0.8,C:inactive}Justice'},
-                text = {
-
-                }
+                text = {{
+                    "Permanently {C:red}debuffs{} the",
+                    "{C:attention}rightmost{} scoring card"
+                },{
+                    "{X:mult,C:white}X#1#{} Mult for each {C:red}debuffed",
+                    "card in scoring hand"
+                }}
             },
             j_bgg_RunTheJewels3 = {
                 name = {'Run The Jewels 3', '{s:0.8,C:inactive}Run The Jewels'},
