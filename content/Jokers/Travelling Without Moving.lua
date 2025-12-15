@@ -11,6 +11,7 @@ SMODS.Joker {
         }
     },
     bgg_addsound = 'bgg_TravellingWithoutMoving',
+    bgg_year = '1996',
     blueprint_compat = false,
     pools = {
         Album = true
