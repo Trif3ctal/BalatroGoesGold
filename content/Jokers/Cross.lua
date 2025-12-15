@@ -29,7 +29,7 @@ SMODS.Joker {
         if context.before and not context.blueprint then
             local target = context.scoring_hand[#context.scoring_hand]
             if not target.debuff then
-                target.debuff = true
+                SMODS.debuff_card(target, true, card)
                 G.E_MANAGER:add_event(Event({
                     func = function()
                         target:juice_up()
