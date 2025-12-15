@@ -10,7 +10,7 @@ SMODS.Joker {
         extra = {
         }
     },
-    -- bgg_addsound = 'bgg_templatestring',
+    bgg_addsound = 'bgg_AM',
     bgg_year = 2013,
     bgg_genres = { 'rock', 'pop' },
     blueprint_compat = true,
@@ -27,4 +27,9 @@ SMODS.Joker {
     calculate = function(self, card, context)
         local stg = card.ability.extra
     end
+}
+
+SMODS.Sound {
+    key = 'AM',
+    path = 'addsounds/AM.ogg'
 }
