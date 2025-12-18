@@ -284,6 +284,12 @@ return {
 
                 }
             },
+                                    j_bgg_KeyOfLife = {
+                name = { 'Songs in the Key of Life', '{s:0.8,C:inactive}Stevie Wonder' },
+                text = {
+
+                }
+            },
         },
         Other = {
             p_bgg_mashup_jumbo_1 = {
