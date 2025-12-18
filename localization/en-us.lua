@@ -278,6 +278,12 @@ return {
 
                 }
             },
+                        j_bgg_SilkSonic = {
+                name = { 'An Evening with Silk Sonic', '{s:0.8,C:inactive}Silk Sonic' },
+                text = {
+
+                }
+            },
         },
         Other = {
             p_bgg_mashup_jumbo_1 = {
