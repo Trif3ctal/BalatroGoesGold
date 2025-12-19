@@ -279,16 +279,18 @@ return {
 
                 }
             },
-                        j_bgg_SilkSonic = {
+            j_bgg_SilkSonic = {
                 name = { 'An Evening with Silk Sonic', '{s:0.8,C:inactive}Silk Sonic' },
                 text = {
 
                 }
             },
-                                    j_bgg_KeyOfLife = {
+            j_bgg_KeyOfLife = {
                 name = { 'Songs in the Key of Life', '{s:0.8,C:inactive}Stevie Wonder' },
                 text = {
-
+                    'Gains {X:mult,C:white}X#2#{} Mult if played',
+                    'hand contains a {C:attention}Straight{}',
+                    '{C:inactive}(Currently {X:mult,C:white}X#1#{C:inactive} Mult)'
                 }
             },
         },
