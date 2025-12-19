@@ -191,7 +191,8 @@ return {
             j_bgg_CrimsonKing = {
                 name = { 'In The Court of the', 'Crimson King', '{s:0.8,C:inactive}King Crimson' },
                 text = {
-
+                    'Gain a random {C:attention}Free Joker',
+                    'tag when skipping a Blind'
                 }
             },
             j_bgg_GunfighterBallads = {
