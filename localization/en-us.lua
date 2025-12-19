@@ -64,7 +64,9 @@ return {
             j_bgg_BlueAlbum = {
                 name = { 'The Blue Album', '{s:0.8,C:inactive}Weezer' },
                 text = {
-
+                    'If played hand contains a {C:attention}Four',
+                    '{C:attention} of a Kind{}, scored cards gain',
+                    '{C:chips}+#1#{} permanent Chips'
                 }
             },
             j_bgg_MMFOOD = {
