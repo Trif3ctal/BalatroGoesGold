@@ -12,9 +12,9 @@ SMODS.Joker {
             increase = 0.1
         }
     },
-    bgg_addsound = 'bgg_KeyOfLife',
-    bgg_year = 1976,
-    bgg_genres = { 'soul', 'funk'},
+    jmix_addsound = 'jmix_KeyOfLife',
+    jmix_year = 1976,
+    jmix_genres = { 'soul', 'funk'},
     blueprint_compat = true,
     pools = {
         Album = true

@@ -10,9 +10,9 @@ SMODS.Joker {
         extra = {
         }
     },
-    bgg_addsound = 'bgg_Chromakopia',
-    bgg_year = 2024,
-    bgg_genres = { 'neosoul', 'hiphop' },
+    jmix_addsound = 'jmix_Chromakopia',
+    jmix_year = 2024,
+    jmix_genres = { 'neosoul', 'hiphop' },
     blueprint_compat = true,
     pools = {
         Album = true

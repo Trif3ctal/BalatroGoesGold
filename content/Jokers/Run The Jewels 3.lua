@@ -11,9 +11,9 @@ SMODS.Joker {
             diamonds = 3
         }
     },
-    bgg_addsound = 'bgg_RTJ3',
-    bgg_year = 2016,
-    bgg_genres = { 'hiphop' },
+    jmix_addsound = 'jmix_RTJ3',
+    jmix_year = 2016,
+    jmix_genres = { 'hiphop' },
     blueprint_compat = true,
     pools = {
         Album = true

@@ -10,9 +10,9 @@ SMODS.Joker {
         extra = {
         }
     },
-    bgg_addsound = 'bgg_TravellingWithoutMoving',
-    bgg_year = '1996',
-    bgg_genres = { 'funk', 'jazz', 'pop' },
+    jmix_addsound = 'jmix_TravellingWithoutMoving',
+    jmix_year = '1996',
+    jmix_genres = { 'funk', 'jazz', 'pop' },
     blueprint_compat = false,
     pools = {
         Album = true
@@ -36,8 +36,8 @@ SMODS.Joker {
                 end
             }))
             return {
-                message = localize('k_bgg_rearrange_ex'),
-                sound = 'bgg_rearrange'
+                message = localize('k_jmix_rearrange_ex'),
+                sound = 'jmix_rearrange'
             }
         end
     end

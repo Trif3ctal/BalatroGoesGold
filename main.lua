@@ -1,4 +1,4 @@
-BalatroGoesGold = SMODS.current_mod
+Mixtape = SMODS.current_mod
 
 --#region File Loading
 local nativefs = NFS

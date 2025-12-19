@@ -1,2 +1,2 @@
-# BalatroGoesGold
+# Mixtape
 tenative balatro music mod

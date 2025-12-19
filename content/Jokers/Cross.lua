@@ -11,9 +11,9 @@ SMODS.Joker {
             xmult = 2
         }
     },
-    bgg_addsound = 'bgg_Cross',
-    bgg_year = 2007,
-    bgg_genres = { 'electronic' },
+    jmix_addsound = 'jmix_Cross',
+    jmix_year = 2007,
+    jmix_genres = { 'electronic' },
     blueprint_compat = true,
     pools = {
         Album = true

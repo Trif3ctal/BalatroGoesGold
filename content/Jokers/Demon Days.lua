@@ -11,9 +11,9 @@ SMODS.Joker {
             active = false
         }
     },
-    bgg_addsound = 'bgg_DemonDays',
-    bgg_year = 2005,
-    bgg_genres = { 'pop', 'rock', 'hiphop', 'electronic' },
+    jmix_addsound = 'jmix_DemonDays',
+    jmix_year = 2005,
+    jmix_genres = { 'pop', 'rock', 'hiphop', 'electronic' },
     blueprint_compat = true,
     pools = {
         Album = true

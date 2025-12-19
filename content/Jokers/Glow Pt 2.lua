@@ -12,9 +12,9 @@ SMODS.Joker {
             add = 2
         }
     },
-    bgg_addsound = 'bgg_GlowPt2',
-    bgg_year = 2001,
-    bgg_genres = { 'folk', 'rock' },
+    jmix_addsound = 'jmix_GlowPt2',
+    jmix_year = 2001,
+    jmix_genres = { 'folk', 'rock' },
     blueprint_compat = true,
     pools = {
         Album = true

@@ -12,9 +12,9 @@ SMODS.Joker {
             increase = 0.75
         }
     },
-    bgg_addsound = 'bgg_Vanisher',
-    bgg_year = '2025',
-    bgg_genres = { 'pop', 'folk', 'electronic', 'hiphop' },
+    jmix_addsound = 'jmix_Vanisher',
+    jmix_year = '2025',
+    jmix_genres = { 'pop', 'folk', 'electronic', 'hiphop' },
     blueprint_compat = true,
     pools = {
         Album = true

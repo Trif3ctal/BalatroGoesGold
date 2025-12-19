@@ -2,7 +2,7 @@ SMODS.Booster {
     key = "mashup_normal_2",
     kind = "Album",
     -- atlas = "Boosters",
-    group_key = "k_bgg_mashup_pack",
+    group_key = "k_jmix_mashup_pack",
     pos = {
         x = 1,
         y = 0
@@ -15,7 +15,7 @@ SMODS.Booster {
     weight = 0.96,
     select_card = 'jokers',
     create_card = function(self, card)
-        return create_card("Album", G.pack_cards, nil, nil, true, true, nil, "bgg_mashup")
+        return create_card("Album", G.pack_cards, nil, nil, true, true, nil, "jmix_mashup")
     end,
     ease_background_colour = function(self)
         ease_colour(G.C.DYN_UI.MAIN, G.C.ORANGE)

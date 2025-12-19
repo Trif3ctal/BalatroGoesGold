@@ -11,9 +11,9 @@ SMODS.Joker {
             chips = 10
         }
     },
-    bgg_addsound = 'bgg_BlueAlbum',
-    bgg_year = 1994,
-    bgg_genres = { 'rock', 'pop' },
+    jmix_addsound = 'jmix_BlueAlbum',
+    jmix_year = 1994,
+    jmix_genres = { 'rock', 'pop' },
     blueprint_compat = true,
     pools = {
         Album = true

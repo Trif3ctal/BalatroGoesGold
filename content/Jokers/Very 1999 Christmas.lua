@@ -10,9 +10,9 @@ SMODS.Joker {
         extra = {
         }
     },
-    -- bgg_addsound = 'bgg_templatestring',
-    bgg_year = 2024,
-    bgg_genres = { 'jazz', },
+    -- jmix_addsound = 'jmix_templatestring',
+    jmix_year = 2024,
+    jmix_genres = { 'jazz', },
     blueprint_compat = true,
     pools = {
         Album = true

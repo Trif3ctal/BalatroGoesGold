@@ -11,9 +11,9 @@ SMODS.Joker {
         }
     },
     rarity = 3,
-    bgg_addsound = 'bgg_GunfighterBallads',
-    bgg_year = 1959,
-    bgg_genres = { 'country' },
+    jmix_addsound = 'jmix_GunfighterBallads',
+    jmix_year = 1959,
+    jmix_genres = { 'country' },
     blueprint_compat = false,
     pools = {
         Album = true
@@ -43,14 +43,14 @@ SMODS.Joker {
             end
 
             if total == stg.goal then
-                BalatroGoesGold.gunfighter_trigger = true
+                Mixtape.gunfighter_trigger = true
                 G.E_MANAGER:add_event(Event({
                     func = function()
                         card:juice_up(0.8, 0.8)
-                        play_sound('bgg_gunshot')
+                        play_sound('jmix_gunshot')
 
                         G.GAME.chips = G.GAME.blind.chips
-                        BalatroGoesGold.gunfighter_trigger = nil
+                        Mixtape.gunfighter_trigger = nil
                         return true;
                     end
                 }))
@@ -69,7 +69,7 @@ SMODS.Joker {
 
 local ec = eval_card
 function eval_card(...)
-    if not BalatroGoesGold.gunfighter_trigger then
+    if not Mixtape.gunfighter_trigger then
         return ec(...)
     else
         return {}, {}
@@ -79,7 +79,7 @@ end
 local scrs = SMODS.calculate_round_score
 function SMODS.calculate_round_score(flames)
     local ret = scrs(flames)
-    if BalatroGoesGold.gunfighter_trigger then
+    if Mixtape.gunfighter_trigger then
         ret = G.GAME.blind.chips
     end
     return ret

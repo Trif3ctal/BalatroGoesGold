@@ -11,9 +11,9 @@ SMODS.Joker {
             mult = 12
         }
     },
-    bgg_addsound = 'bgg_Blackstar',
-    bgg_year = 2016,
-    bgg_genres = { 'rock', 'jazz', 'electronic' },
+    jmix_addsound = 'jmix_Blackstar',
+    jmix_year = 2016,
+    jmix_genres = { 'rock', 'jazz', 'electronic' },
     blueprint_compat = true,
     pools = {
         Album = true
